@@ -1,0 +1,60 @@
+#container {
+	background-color: #fec;
+	margin: 0 auto;
+	text-align: center;
+	border: solid 1px #000;
+	display: flex;
+	flex-wrap: wrap;
+}
+#search {
+	margin: 10px;
+}
+
+#top {
+	margin-top: 10px;
+	top: 0;
+	width: 300px;
+}
+#under {
+	margin: 5%;
+}
+ul li{
+	list-style: none;
+	font-size: 150%;
+}
+.icon::before {
+font-family: "Font Awesome 5 Free";
+font-weight: 900;
+content: "\f000";
+}
+
+table th {
+	border-collapse: collapse;
+	border:  solid #333;
+}
+
+table td {
+	border-collapse: collapse;
+	border:  solid #333;
+}
+
+table {
+	text-align: center;
+	margin: 15px auto;
+}
+h1 {
+	text-align: center;
+}
+#english:invalid {
+	border: 2px solid #333;
+	background: #333;
+}
+.bar {
+	visibility: hidden;
+}
+.time {
+	text-align: center;
+}
+.wordSearch {
+	margin: 10px;
+}
