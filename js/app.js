@@ -39,7 +39,6 @@ $(function(){
 		for(let i=0; i < difi.length; i++){
 			if($(difi[i]).prop('checked')) val = $(difi[i]).val();
 		}
-		console.log(val);
 		$('#word').empty();
 		for(let i=0; i < 10; i++){
 			$.ajax({
