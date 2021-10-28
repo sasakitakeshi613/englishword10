@@ -39,6 +39,7 @@ $(function(){
 		for(let i=0; i < difi.length; i++){
 			if($(difi[i]).prop('checked')) val = $(difi[i]).val();
 		}
+		console.log(val);
 		$('#word').empty();
 		for(let i=0; i < 10; i++){
 			$.ajax({
@@ -59,4 +60,17 @@ $(function(){
 		}
 	});
 	//----------------------------------
+	
+	//登録するかどうかを確認するモーダル用のｊｓ
+	$('#submit').on('submit', function(){
+		let res = confirm("本当に登録しますか？");
+		return res;
+	});
+	
+	//英単語テキストに入力した単語を検索フォームにもってくるjs
+	$('#english').keyup(function(){
+		let ele = $(this).val();
+		$('#search').val(ele);
+	});
+	//-----------------------------------------
 });
