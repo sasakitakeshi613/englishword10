@@ -1,2 +1,3 @@
 使用ツール
 ・sakura editor
+・MySQL
