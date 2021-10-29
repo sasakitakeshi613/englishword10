@@ -39,6 +39,7 @@ $(function(){
 		for(let i=0; i < difi.length; i++){
 			if($(difi[i]).prop('checked')) val = $(difi[i]).val();
 		}
+		console.log(val);
 		$('#word').empty();
 		for(let i=0; i < 10; i++){
 			$.ajax({
@@ -48,9 +49,9 @@ $(function(){
 				dataType: 'json',
 			})
 			.done(function(d){
-					let eng = $('<li>').text(d[i].english);
+					let eng = $('<li>').text(d.english);
 					$('#word').append(eng);
-					let japa = $('<li>').text(d[i].japanese).addClass('none');
+					let japa = $('<li>').text(d.japanese).addClass('none');
 					$('#word').append(japa);
 			})
 			.fail(function(){
@@ -65,7 +66,6 @@ $(function(){
 		let res = confirm("本当に登録しますか？");
 		return res;
 	});
-	//----------------------------------
 	
 	//英単語テキストに入力した単語を検索フォームにもってくるjs
 	$('#english').keyup(function(){
