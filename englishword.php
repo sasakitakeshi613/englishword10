@@ -23,6 +23,7 @@ $now = date("Y-m-d H:i:s");
 					<input type=radio name="difficult" value="1" id="easy" checked><label for="easy">easy</label>
 					<input type=radio name="difficult" value="2" id="normal"><label for="normal">normal</label>
 					<input type=radio name="difficult" value="3" id="hard"><label for="hard">hard</label>
+					<input type=radio name="difficult" value="4" id="all"><label for="all">すべて</label>
 				</p>
 				<button input="submit" id="num">単発</button>
 				<button input="submit" id="num10">１０連</button>
